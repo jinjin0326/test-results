@@ -1,0 +1,258 @@
+文件 172.28.9.70_aging_result.txt 的内容:
+机器：172.28.9.70 运行内容：aging 
+检查时间： Tue Feb 25 07:00:06 CST 2025 
+bm-smi tpu状态为Active, SuccessTue Feb 25 07:00:06 2025
++--------------------------------------------------------------------------------------------------+
+| Lib Version:    0.5.1 LTS SP4     Driver Version:  0.5.1 LTS SP4                                 |
++---------------------------------------+----------------------------------------------------------+
+|card  Name      Mode        SN         |TPU  boardT  chipT   TPU_P  TPU_V  ECC  CorrectN  Tpu-Util|
+|12V_ATX  MaxP boardP Minclk Maxclk  Fan|Bus-ID      Status   Currclk   TPU_C   Memory-Usage       |
+|=======================================+==========================================================|
+| 0 1684X-SOC     SOC      N/A          | 0    N/A     N/A     N/A     N/A  N/A    N/A         10% |
+|   N/A   N/A   N/A   75M     950M   N/A| N/A        Active    950M       N/A   404MB/ 9070MB      |
++=======================================+==========================================================+
+
++--------------------------------------------------------------------------------------------------+
+| Processes:                                                                            TPU Memory |
+|  TPU-ID       PID   Process name                                                      Usage      |
+|==================================================================================================|
+        0   1517948  bmjpegmulti                                                        26MB
+        0   1517813  bmrt_test                                                         239MB
+        0   1517380  test_bm1684x_slt                                                   72MB
+        0   1517985  bmvpuenc                                                           66MB
+
+
+
+dmesg中无异常信息,  Success
+没有异常core文件, Success
+aging log中无异常信息,  Success
+运行了8087轮
+机器:172.28.9.70 运行内容:aging 检查日期：Tue Feb 25 07:00:09 CST 2025 检查结果：PASS
+
+文件 172.28.9.108_reboot_result.txt 的内容:
+机器：172.28.9.108 运行内容：reboot 
+检查时间： Tue Feb 25 07:00:05 CST 2025 
+bm-smi tpu状态为Active, SuccessTue Feb 25 07:00:05 2025
++--------------------------------------------------------------------------------------------------+
+| SDK Version:   0.4.11             Driver Version:  0.4.11                                         |
++---------------------------------------+----------------------------------------------------------+
+|card  Name      Mode        SN         |TPU  boardT  chipT   TPU_P  TPU_V  ECC  CorrectN  Tpu-Util|
+|12V_ATX  MaxP boardP Minclk Maxclk  Fan|Bus-ID      Status   Currclk   TPU_C   Memory-Usage       |
+|=======================================+==========================================================|
+| 0 CV186AH-SOC   SOC      N/A          | 0    N/A     N/A     N/A     N/A  N/A    N/A          0% |
+|   N/A   N/A   N/A   25M    1000M   N/A| N/A        Active    900M       N/A     0MB/ 2304MB      |
++=======================================+==========================================================+
+
++--------------------------------------------------------------------------------------------------+
+| Processes:                                                                            TPU Memory |
+|  TPU-ID       PID   Process name                                                      Usage      |
+|==================================================================================================|
+
+
+
+dmesg中存在异常信息, Fail: 
+ [Tue Feb 25 06:59:40 2025] cfg80211: failed to load regulatory.db
+没有异常core文件, Success
+reboot log中无异常信息,  Success
+运行了2374轮
+机器:172.28.9.108 运行内容:reboot 检查日期：Tue Feb 25 07:00:05 CST 2025  检查结果：FAIL
+
+文件 172.28.9.111_reboot_result.txt 的内容:
+机器：172.28.9.111 运行内容：reboot 
+检查时间： Tue Feb 25 07:00:03 CST 2025 
+bm-smi tpu状态为Active, SuccessTue Feb 25 07:00:03 2025
++--------------------------------------------------------------------------------------------------+
+| Lib Version:    0.5.1 LTS SP4     Driver Version:  0.5.1 LTS SP4                                 |
++---------------------------------------+----------------------------------------------------------+
+|card  Name      Mode        SN         |TPU  boardT  chipT   TPU_P  TPU_V  ECC  CorrectN  Tpu-Util|
+|12V_ATX  MaxP boardP Minclk Maxclk  Fan|Bus-ID      Status   Currclk   TPU_C   Memory-Usage       |
+|=======================================+==========================================================|
+| 0 1684X-SOC     SOC      N/A          | 0    N/A     N/A     N/A     N/A  N/A    N/A          0% |
+|   N/A   N/A   N/A   75M     950M   N/A| N/A        Active    950M       N/A     0MB/ 8430MB      |
++=======================================+==========================================================+
+
++--------------------------------------------------------------------------------------------------+
+| Processes:                                                                            TPU Memory |
+|  TPU-ID       PID   Process name                                                      Usage      |
+|==================================================================================================|
+
+
+
+dmesg中存在异常信息, Fail: 
+ [Tue Feb 25 06:59:03 2025] [2] :platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[Tue Feb 25 06:59:03 2025] [2] :cfg80211: failed to load regulatory.db
+[Tue Feb 25 06:59:03 2025] [1] :ttyS0 - failed to request DMA
+[Tue Feb 25 06:59:03 2025] [1] :systemd[1]: Failed to find module 'autofs4'
+[Tue Feb 25 06:59:15 2025] [3] :bluetooth hci0: Direct firmware load for rtl_bt/rtl8822b_fw.bin failed with error -2
+没有异常core文件, Success
+reboot log中无异常信息,  Success
+运行了13718轮
+机器:172.28.9.111 运行内容:reboot 检查日期：Tue Feb 25 07:00:04 CST 2025  检查结果：FAIL
+
+文件 172.28.142.54_bmmonkey_result.txt 的内容:
+机器：172.28.142.54 运行内容：bmmonkey 
+检查时间： 2025年 02月 25日 星期二 07:00:03 CST 
+bm-smi tpu状态为Active, SuccessTue Feb 25 07:00:03 2025
++--------------------------------------------------------------------------------------------------+
+| Lib Version:    0.5.1 LTS SP4     Driver Version:  0.5.1 LTS SP4                                 |
++---------------------------------------+----------------------------------------------------------+
+|card  Name      Mode        SN         |TPU  boardT  chipT   TPU_P  TPU_V  ECC  CorrectN  Tpu-Util|
+|12V_ATX  MaxP boardP Minclk Maxclk  Fan|Bus-ID      Status   Currclk   TPU_C   Memory-Usage       |
+|=======================================+==========================================================|
+| 0    SC7+      PCIE HQDZW1TBCJCAJ0023 | 0    34C     36C    2.9W   731mV  OFF    N/A          0% |
+|3580mA   75W   42W   25M     750M   N/A|000:08:00.0 Active    750M      3.9A  1040MB/14781MB      |
+|                                       |----------------------------------------------------------|
+|                                       | 1    37C     36C    2.9W   731mV  OFF    N/A          0% |
+|                                       |000:08:00.1 Active    750M      3.9A  1476MB/14781MB      |
+|                                       |----------------------------------------------------------|
+|                                       | 2    34C     37C    2.5W   733mV  OFF    N/A          0% |
+|                                       |000:08:00.2 Active    750M      3.4A  1535MB/14781MB      |
++=======================================+==========================================================+
+| 1    SC7+      PCIE HQDZW1TBCJCAJ0038 | 3    38C     42C    3.5W   729mV  OFF    N/A       100%  |
+|4688mA   75W   56W   25M     750M   N/A|000:0f:00.0 Active    750M      4.8A  1258MB/14781MB      |
+|                                       |----------------------------------------------------------|
+|                                       | 4    37C     37C    3.3W   731mV  OFF    N/A       100%  |
+|                                       |000:0f:00.1 Active    750M      4.5A   884MB/14781MB      |
+|                                       |----------------------------------------------------------|
+|                                       | 5    33C     40C    7.0W   717mV  OFF    N/A       100%  |
+|                                       |000:0f:00.2 Active    750M      9.7A 11303MB/14781MB      |
++=======================================+==========================================================+
+
++--------------------------------------------------------------------------------------------------+
+| Processes:                                                                            TPU Memory |
+|  TPU-ID       PID   Process name                                                      Usage      |
+|==================================================================================================|
+        0      5131  test_bm_restart                                                   480MB
+        0      5130  test_bm_restart                                                   480MB
+        1      5206  test_bm_restart                                                   699MB
+        1      5205  test_bm_restart                                                   699MB
+        2      5280  test_bm_restart                                                   735MB
+        2      5278  test_bm_restart                                                   721MB
+        3   3497041  /data/bmMonkey/bin/bmMonkey                                       103MB
+        3   3497039  /data/bmMonkey/bin/bmMonkey                                       103MB
+        3      8438  /data/bmMonkey/bin/bmMonkey                                       963MB
+        4   3497057  /home/bitmain/big/wlm/new_bmmonkey/bmMonkey/bin/bmMonkey                     108MB
+        4   3497056  /home/bitmain/big/wlm/new_bmmonkey/bmMonkey/bin/bmMonkey                     103MB
+        4      8623  /home/bitmain/big/wlm/new_bmmonkey/bmMonkey/bin/bmMonkey                     590MB
+        5   3497259  bm_panda                                                          510MB
+        5   3497155  bm_panda                                                          510MB
+        5   3497016  bm_panda                                                          510MB
+        5   3496931  bm_panda                                                          510MB
+        5   3496914  bm_panda                                                          510MB
+        5   3496895  bm_panda                                                          510MB
+        5   3496861  bm_panda                                                          510MB
+        5   3496844  bm_panda                                                          510MB
+        5   3496827  bm_panda                                                          510MB
+        5   3496810  bm_panda                                                          510MB
+        5   3496793  bm_panda                                                          510MB
+        5   3496776  bm_panda                                                          510MB
+        5   3496758  bm_panda                                                          510MB
+        5   3496724  bm_panda                                                          510MB
+        5   3496707  bm_panda                                                          510MB
+        5   3496639  bm_panda                                                          510MB
+        5   3496623  bm_panda                                                          510MB
+        5   3496605  bm_panda                                                          510MB
+        5   3496589  bm_panda                                                          510MB
+        5   3496554  bm_panda                                                          510MB
+        5   3496537  bm_panda                                                          510MB
+        5   3496452  bm_panda                                                          510MB
+
+
+
+dmesg中存在异常信息, Fail: 
+ [五 12月 27 15:31:39 2024] pci 0000:82:00.0: BAR 7: failed to assign [mem size 0x00400000 64bit pref]
+[五 12月 27 15:31:39 2024] pci 0000:82:00.1: BAR 7: failed to assign [mem size 0x00400000 64bit pref]
+[五 12月 27 15:31:39 2024] pci 0000:82:00.0: BAR 10: failed to assign [mem size 0x00100000 64bit pref]
+[五 12月 27 15:31:39 2024] pci 0000:82:00.1: BAR 10: failed to assign [mem size 0x00100000 64bit pref]
+[五 12月 27 15:31:39 2024] ERST: Error Record Serialization Table (ERST) support is initialized.
+[五 12月 27 15:31:42 2024] bmsophon: module verification failed: signature and/or required key missing - tainting kernel
+没有异常core文件, Success
+monkey log中无异常信息,  Success
+机器:172.28.142.54 运行内容:bmmonkey 检查日期：2025年 02月 25日 星期二 07:00:05 CST  检查结果：FAIL
+
+文件 172.28.9.33_reboot_f_result.txt 的内容:
+机器：172.28.9.33 运行内容：reboot_f 
+检查时间： Tue Feb 25 07:00:03 CST 2025 
+bm-smi tpu状态为Active, SuccessTue Feb 25 07:00:03 2025
++--------------------------------------------------------------------------------------------------+
+| Lib Version:    0.5.1 LTS SP4     Driver Version:  0.5.1 LTS SP4                                 |
++---------------------------------------+----------------------------------------------------------+
+|card  Name      Mode        SN         |TPU  boardT  chipT   TPU_P  TPU_V  ECC  CorrectN  Tpu-Util|
+|12V_ATX  MaxP boardP Minclk Maxclk  Fan|Bus-ID      Status   Currclk   TPU_C   Memory-Usage       |
+|=======================================+==========================================================|
+| 0 1684X-SOC     SOC      N/A          | 0    N/A     N/A     N/A     N/A  N/A    N/A          0% |
+|   N/A   N/A   N/A   75M     950M   N/A| N/A        Active    950M       N/A     0MB/ 9070MB      |
++=======================================+==========================================================+
+
++--------------------------------------------------------------------------------------------------+
+| Processes:                                                                            TPU Memory |
+|  TPU-ID       PID   Process name                                                      Usage      |
+|==================================================================================================|
+
+
+
+dmesg中存在异常信息, Fail: 
+ [Tue Feb 25 06:59:23 2025] [0] :mmc0: sdhci: ADMA Err:  0x00000000 | ADMA Ptr: 0x0000000022a4c20c
+[Tue Feb 25 06:59:24 2025] [1] :platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[Tue Feb 25 06:59:24 2025] [1] :cfg80211: failed to load regulatory.db
+[Tue Feb 25 06:59:24 2025] [5] :ttyS0 - failed to request DMA
+[Tue Feb 25 06:59:25 2025] [5] :systemd[1]: Failed to find module 'autofs4'
+没有异常core文件, Success
+reboot log中无异常信息,  Success
+运行了28200轮
+机器:172.28.9.33 运行内容:reboot_f 检查日期：Tue Feb 25 07:00:04 CST 2025  检查结果：FAIL
+
+文件 172.28.9.67_bmmonkey_result.txt 的内容:
+机器：172.28.9.67 运行内容：bmmonkey 
+检查时间： Tue Feb 25 07:00:03 CST 2025 
+bm-smi tpu状态为Active, SuccessTue Feb 25 07:00:03 2025
++--------------------------------------------------------------------------------------------------+
+| Lib Version:    0.5.1 LTS SP4     Driver Version:  0.5.1 LTS SP4                                 |
++---------------------------------------+----------------------------------------------------------+
+|card  Name      Mode        SN         |TPU  boardT  chipT   TPU_P  TPU_V  ECC  CorrectN  Tpu-Util|
+|12V_ATX  MaxP boardP Minclk Maxclk  Fan|Bus-ID      Status   Currclk   TPU_C   Memory-Usage       |
+|=======================================+==========================================================|
+| 0 1684X-SOC     SOC      N/A          | 0    N/A     N/A     N/A     N/A  N/A    N/A         94% |
+|   N/A   N/A   N/A   75M     950M   N/A| N/A        Active    950M       N/A   957MB/ 9070MB      |
++=======================================+==========================================================+
+
++--------------------------------------------------------------------------------------------------+
+| Processes:                                                                            TPU Memory |
+|  TPU-ID       PID   Process name                                                      Usage      |
+|==================================================================================================|
+        0     16817  /data/bmMonkey/bin/bmMonkey                                       532MB
+        0     16817  /data/bmMonkey/bin/bmMonkey                                       114MB
+
+
+
+dmesg中无异常信息,  Success
+没有异常core文件, Success
+monkey log中无异常信息,  Success
+机器:172.28.9.67 运行内容:bmmonkey 检查日期：Tue Feb 25 07:00:06 CST 2025 检查结果：PASS
+
+文件 172.28.9.71_bmmonkey_run.sh+干扰程序_result.txt 的内容:
+机器：172.28.9.71 运行内容：bmmonkey_run.sh+干扰程序 
+检查时间： Tue Feb 25 07:00:03 CST 2025 
+bm-smi tpu状态为Active, SuccessTue Feb 25 07:00:03 2025
++--------------------------------------------------------------------------------------------------+
+| Lib Version:    0.5.1 LTS SP4     Driver Version:  0.5.1 LTS SP4                                 |
++---------------------------------------+----------------------------------------------------------+
+|card  Name      Mode        SN         |TPU  boardT  chipT   TPU_P  TPU_V  ECC  CorrectN  Tpu-Util|
+|12V_ATX  MaxP boardP Minclk Maxclk  Fan|Bus-ID      Status   Currclk   TPU_C   Memory-Usage       |
+|=======================================+==========================================================|
+| 0  1684-SOC     SOC      N/A          | 0    N/A     N/A     N/A     N/A  N/A    N/A          0% |
+|   N/A   N/A   N/A   75M     550M   N/A| N/A        Active    550M       N/A    74MB/ 9135MB      |
++=======================================+==========================================================+
+
++--------------------------------------------------------------------------------------------------+
+| Processes:                                                                            TPU Memory |
+|  TPU-ID       PID   Process name                                                      Usage      |
+|==================================================================================================|
+
+
+
+dmesg中无异常信息,  Success
+没有异常core文件, Success
+monkey log中无异常信息,  Success
+机器:172.28.9.71 运行内容:bmmonkey_run.sh+干扰程序 检查日期：Tue Feb 25 07:00:03 CST 2025 检查结果：PASS
+
